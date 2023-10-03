@@ -1,3 +1,6 @@
+body{
+    background-color: rgba(182, 255, 73, 0.25);
+}
 .boxone{
     margin: 40px;
     background-color: greenyellow;
