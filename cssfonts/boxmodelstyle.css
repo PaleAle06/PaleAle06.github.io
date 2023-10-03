@@ -3,19 +3,19 @@ body{
 }
 .boxone{
     margin: 40px;
-    width: 15em;
+    width: 10em;
     background-color: greenyellow;
 }
 .boxtwo{
     margin: 20px;
     padding: 20px;
-    width: 20em;
+    width: 15em;
     background-color: rgb(134, 223, 0);
 }
 .boxthree{
     margin: 30px;
     padding: 30px;
-    width: 25em;
+    width: 20em;
     border: 7px solid #22AABB;
     background-color: rgb(114, 190, 0);
 }
