@@ -1,15 +1,15 @@
 .boxone{
     margin: 40px;
-    color: greenyellow;
+    background-color: greenyellow;
 }
 .boxtwo{
     margin: 20px;
     padding: 20px;
-    color: rgb(134, 223, 0);
+    background-color: rgb(134, 223, 0);
 }
 .boxthree{
     margin: 30px;
     padding: 30px;
     border: 7px solid #22AABB;
-    color: rgb(114, 190, 0);
+    background-color: rgb(114, 190, 0);
 }
