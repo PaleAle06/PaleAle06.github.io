@@ -3,16 +3,19 @@ body{
 }
 .boxone{
     margin: 40px;
+    width: auto;
     background-color: greenyellow;
 }
 .boxtwo{
     margin: 20px;
     padding: 20px;
+    width: auto;
     background-color: rgb(134, 223, 0);
 }
 .boxthree{
     margin: 30px;
     padding: 30px;
+    width: auto;
     border: 7px solid #22AABB;
     background-color: rgb(114, 190, 0);
 }
