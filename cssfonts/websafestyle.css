@@ -1,0 +1,19 @@
+body{
+    background-color: rgb(167, 255, 150);
+}
+div{
+    padding: 1em;
+    margin-top: 1em;
+    height: 3em;
+    width: 25em;
+}
+#boxone{
+    background-image: linear-gradient(rgb(167, 255, 150), rgb(109, 255, 80));
+}
+#boxtwo{
+    background-image: linear-gradient(rgb(167, 255, 150), rgb(109, 255, 80));
+}
+#boxthree{
+    background-image: linear-gradient(rgb(167, 255, 150), rgb(109, 255, 80));
+    color: white;
+}
