@@ -3,7 +3,7 @@ body{
 }
 .boxone{
     margin: 40px;
-    width: auto;
+    width: 3em;
     background-color: greenyellow;
 }
 .boxtwo{
