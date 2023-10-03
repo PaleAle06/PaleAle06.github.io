@@ -1,0 +1,12 @@
+.boxone{
+    margin: 40px;
+}
+.boxtwo{
+    margin: 20px;
+    padding: 20px;
+}
+.boxthree{
+    margin: 30px;
+    padding: 30px;
+    border: 7px solid #22AABB;
+}
