@@ -1,0 +1,16 @@
+body{
+    background-color: white;
+}
+.s{font-size: small;}
+.n{font-size: medium;}
+.l{font-size: large;}
+.ll{font-size: larger;}
+div{
+    padding: 1em;
+    width: 20em;
+    margin-top: 1em;
+    background-image: linear-gradient( rgb(139, 107, 255), rgb(88, 58, 255));
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 5px 3px black;
+    height: 25em;
+}
