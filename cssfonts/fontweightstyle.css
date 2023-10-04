@@ -1,0 +1,28 @@
+body{
+    background-color: white;
+}
+.l{font-weight: lighter;}
+.n{font-weight: normal;}
+.b{font-weight: bold;}
+.bb{font-weight: bolder;}
+div{
+    padding: 1em;
+    margin-top: 1em;
+    height: 5em;
+    width: 20em;
+}
+.boxone{
+    background-image: linear-gradient( white, rgb(255, 111, 111));
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 5px 3px black;
+}
+.boxtwo{
+    background-image: linear-gradient(white, rgb(255, 111, 111));
+    font-family: 'Courier New', Courier, monospace;
+    box-shadow: 5px 3px black;
+}
+.boxthree{
+    background-image: linear-gradient(white, rgb(255, 111, 111));
+    font-family: 'Times New Roman', Times, serif;
+    box-shadow: 5px 3px black;
+}
