@@ -9,11 +9,13 @@ div{
 }
 #boxone{
     background-image: linear-gradient(rgb(167, 255, 150), rgb(109, 255, 80));
+    box-shadow: 3px 5px black;
 }
 #boxtwo{
     background-image: linear-gradient(rgb(167, 255, 150), rgb(109, 255, 80));
+    box-shadow: 3px 5px black;
 }
 #boxthree{
     background-image: linear-gradient(rgb(167, 255, 150), rgb(109, 255, 80));
-    color: white;
+    box-shadow: 3px 5px black;
 }
