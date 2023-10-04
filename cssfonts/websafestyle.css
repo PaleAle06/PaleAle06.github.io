@@ -4,25 +4,23 @@ body{
 div{
     padding: 1em;
     width: 20em;
+    margin-top: 1em;
 }
 .boxone{
     background-image: linear-gradient(rgb(167, 255, 150), rgb(109, 255, 80));
     font-family: Arial, Helvetica, sans-serif;
     box-shadow: 5px 3px black;
-    margin-top: 5em;
     height: 5em;
 }
 .boxtwo{
     background-image: linear-gradient(rgb(167, 255, 150), rgb(109, 255, 80));
     font-family: 'Courier New', Courier, monospace;
     box-shadow: 5px 3px black;
-    margin-top: 5em;
-    height: 8em;
+    height: 9em;
 }
 .boxthree{
     background-image: linear-gradient(rgb(167, 255, 150), rgb(109, 255, 80));
     font-family: 'Times New Roman', Times, serif;
     box-shadow: 5px 3px black;
-    margin-top: 3em;
     height: 5em;
 }
