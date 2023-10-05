@@ -1,15 +1,15 @@
 body{
-    background-color: white;
+    background-color: rgb(176, 184, 255);
 }
-.s{font-size: small;}
-.n{font-size: medium;}
-.l{font-size: large;}
-.ll{font-size: larger;}
+.s{font-size: 0.5em;}
+.n{font-size: 1em;}
+.l{font-size: 1.5em;}
+.ll{font-size: 2em;}
 div{
     padding: 1em;
     width: 20em;
     margin-top: 1em;
-    background-image: linear-gradient( rgb(139, 107, 255), rgb(88, 58, 255));
+    background-image: linear-gradient( rgb(176, 184, 255), rgb(88, 58, 255));
     font-family: Arial, Helvetica, sans-serif;
     box-shadow: 5px 3px black;
     height: 25em;
