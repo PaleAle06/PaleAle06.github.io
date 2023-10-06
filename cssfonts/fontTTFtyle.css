@@ -1,0 +1,21 @@
+@font-face {
+    font-family:MickeyMerryChristmasotf; src: url(MickeyMerryChristmasotf.otf);
+    font-family:myRoboto; src: url(Roboto-Regular.ttf);
+}
+body{
+    background-color: rgb(206, 255, 196);
+}
+.boxone{
+    padding: 1em;
+    margin: 3em;
+    width: 20em;
+    background-image: linear-gradient(rgb(206, 255, 196), rgb(109, 255, 80));
+    font-family:myRoboto,sans-serif;
+}
+.boxtwo{
+    padding: 1em;
+    margin: 3em;
+    width: 20em;
+    background-image: linear-gradient(rgb(206, 255, 196), rgb(109, 255, 80));
+    font-family:MickeyMerryChristmasotf,sans-serif;
+}
