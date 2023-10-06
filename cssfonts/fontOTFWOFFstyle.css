@@ -1,0 +1,21 @@
+@font-face {
+    font-family:myRistretto; src: url(ristretto.woff);
+    font-family:Mayesticaotf; src: url(Mayestica.otf);
+}
+body{
+    background-color: rgb(206, 255, 196);
+}
+.boxone{
+    padding: 1em;
+    margin: 3em;
+    width: 20em;
+    background-image: linear-gradient(rgb(206, 255, 196), rgb(109, 255, 80));
+    font-family:myRistretto,sans-serif;
+}
+.boxtwo{
+    padding: 1em;
+    margin: 3em;
+    width: 20em;
+    background-image: linear-gradient(rgb(206, 255, 196), rgb(109, 255, 80));
+    font-family:Mayesticaotf,sans-serif;
+}
