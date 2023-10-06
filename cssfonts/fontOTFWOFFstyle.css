@@ -12,7 +12,7 @@ body{
 div{
     padding: 1em;
     margin: 3em;
-    width: 20em;
+    width: 15em;
     box-shadow: 5px 3px black;
     background-image: linear-gradient(rgb(206, 255, 196), rgb(109, 255, 80));
 }
@@ -20,6 +20,6 @@ div{
     font-family: myRistretto, sans-serif;
 }
 .boxtwo{
-    font-size: 300%;
+    font-size: 150%;
     font-family: Mayestica, sans-serif;
 }
