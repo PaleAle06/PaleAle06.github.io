@@ -9,6 +9,7 @@ body{
     padding: 1em;
     margin: 3em;
     width: 20em;
+    box-shadow: 5px 3px black;
     background-image: linear-gradient(rgb(206, 255, 196), rgb(109, 255, 80));
     font-family:myRistretto,sans-serif;
 }
@@ -16,6 +17,7 @@ body{
     padding: 1em;
     margin: 3em;
     width: 20em;
+    box-shadow: 5px 3px black;
     background-image: linear-gradient(rgb(206, 255, 196), rgb(109, 255, 80));
     font-family:Mayesticaotf,sans-serif;
 }
