@@ -1,8 +1,10 @@
 @font-face {
-    font-family: myRistretto;
-    src: url(ristretto.woff);
     font-family: Mayestica;
     src: url(Mayestica.otf);
+}
+@font-face {
+    font-family: myRistretto;
+    src: url(ristretto.woff);
 }
 body{
     background-color: rgb(206, 255, 196);

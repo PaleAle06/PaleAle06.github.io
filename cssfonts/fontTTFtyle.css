@@ -1,8 +1,10 @@
 @font-face {
-    font-family:MickeyMerryChristmas;
-    src: url(Mickeys\ Merry\ Christmas.ttf);
     font-family:myRoboto;
     src: url(Roboto-Regular.ttf);
+}
+@font-face {
+    font-family:MickeyMerryChristmas;
+    src: url(Mickeys\ Merry\ Christmas.ttf);
 }
 body{
     background-color: rgb(206, 255, 196);
