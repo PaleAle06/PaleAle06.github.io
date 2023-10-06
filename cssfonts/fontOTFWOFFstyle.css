@@ -11,7 +11,7 @@ body{
     width: 20em;
     box-shadow: 5px 3px black;
     background-image: linear-gradient(rgb(206, 255, 196), rgb(109, 255, 80));
-    font-family:'myRistretto',sans-serif;
+    font-family:myRistretto,sans-serif;
 }
 .boxtwo{
     padding: 1em;
@@ -19,5 +19,5 @@ body{
     width: 20em;
     box-shadow: 5px 3px black;
     background-image: linear-gradient(rgb(206, 255, 196), rgb(109, 255, 80));
-    font-family:'Mayestica',sans-serif;
+    font-family:Mayestica,sans-serif;
 }
