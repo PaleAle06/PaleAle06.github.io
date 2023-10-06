@@ -1,5 +1,5 @@
 @font-face {
-    font-family:MickeyMerryChristmasotf; src: url(Mickeys\ Merry\ Christmas.ttf);
+    font-family:MickeyMerryChristmas; src: url(Mickeys\ Merry\ Christmas.ttf);
     font-family:myRoboto; src: url(Roboto-Regular.ttf);
 }
 body{
@@ -19,5 +19,5 @@ body{
     width: 20em;
     box-shadow: 5px 3px black;
     background-image: linear-gradient(rgb(206, 255, 196), rgb(109, 255, 80));
-    font-family:'MickeyMerryChristmasotf',sans-serif;
+    font-family:'MickeyMerryChristmas',sans-serif;
 }

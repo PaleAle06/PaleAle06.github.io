@@ -1,6 +1,6 @@
 @font-face {
     font-family:myRistretto; src: url(ristretto.woff);
-    font-family:Mayesticaotf; src: url(Mayestica.otf);
+    font-family:Mayestica; src: url(Mayestica.otf);
 }
 body{
     background-color: rgb(206, 255, 196);
@@ -19,5 +19,5 @@ body{
     width: 20em;
     box-shadow: 5px 3px black;
     background-image: linear-gradient(rgb(206, 255, 196), rgb(109, 255, 80));
-    font-family:'Mayesticaotf',sans-serif;
+    font-family:'Mayestica',sans-serif;
 }
