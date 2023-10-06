@@ -3,7 +3,7 @@
     src: url(Roboto-Regular.ttf);
 }
 @font-face {
-    font-family:MickeyMerryChristmas;
+    font-family:MickeysMerryChristmas;
     src: url(Mickeys\Merry\Christmas.ttf);
 }
 body{
@@ -20,5 +20,5 @@ div{
     font-family: myRoboto, sans-serif;
 }
 .boxtwo{
-    font-family: MickeyMerryChristmas, sans-serif;
+    font-family: MickeysMerryChristmas, sans-serif;
 }
