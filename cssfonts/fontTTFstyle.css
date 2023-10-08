@@ -12,7 +12,7 @@ body{
 div{
     padding: 1em;
     margin: 3em;
-    width: 25em;
+    width: 30em;
     box-shadow: 5px 3px black;
     background-image: linear-gradient(rgb(206, 255, 196), rgb(109, 255, 80));
 }
