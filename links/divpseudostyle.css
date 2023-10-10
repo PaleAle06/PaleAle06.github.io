@@ -1,0 +1,17 @@
+body{
+    text-align: center;
+    background-color: darkgreen;
+}
+h1{
+    color: red;
+}
+div{
+    font-size: 5em;
+    border-radius: 1em;
+}
+div.focus{
+    background-color: blue;
+}
+div.hover{
+    color: blue;
+}
