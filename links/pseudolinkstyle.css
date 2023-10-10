@@ -4,6 +4,7 @@ body{
     font-size: 1em;
 }
 a{
+    outline: none;
     margin: 3em;
     float: left;
 }
