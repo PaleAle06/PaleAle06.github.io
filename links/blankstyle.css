@@ -1,0 +1,17 @@
+body{
+    background-color: #DEFF9C;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+}
+ul{
+    list-style-type: none;
+    
+}
+li{
+    margin: 3em;
+    float: left;
+}
+h1{
+    margin-left: 3em;
+    font-size: 3em;
+}
