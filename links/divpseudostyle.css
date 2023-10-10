@@ -8,10 +8,12 @@ h1{
 div{
     font-size: 5em;
     border-radius: 1em;
+    border: 3px white;
 }
-div.focus{
+div:focus{
     background-color: blue;
 }
-div.hover{
+div:hover{
     color: blue;
+    border: 2px lightskyblue;
 }
