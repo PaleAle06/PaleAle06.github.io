@@ -3,11 +3,7 @@ body{
     font-family: 'Courier New', Courier, monospace;
     font-size: 1em;
 }
-ul{
-    list-style-type: none;
-    
-}
-li{
+a{
     margin: 3em;
     float: left;
 }
@@ -22,7 +18,7 @@ a:visited{
     color: darkgreen;
 }
 a:focus{
-    border-bottom: darkblue;
+    border-bottom: 2px darkblue;
 }
 a:hover{
     color: lightgreen;
