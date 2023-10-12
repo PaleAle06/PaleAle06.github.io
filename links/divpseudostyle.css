@@ -6,15 +6,17 @@ h1{
     color: red;
 }
 div{
+    color: white;
     padding: 1em;
     font-size: 5em;
     border-radius: 1em;
-    border: 3px solid white;
+    border: 6px solid white;
+    display: inline-block;
 }
 div:focus{
     background-color: blue;
 }
 div:hover{
     color: blue;
-    border: 2px lightskyblue;
+    border: 4px lightskyblue;
 }
