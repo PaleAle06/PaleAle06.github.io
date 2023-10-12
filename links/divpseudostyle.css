@@ -6,12 +6,13 @@ h1{
     color: red;
 }
 div{
-    width: 20%:
+    width: 20%;
     color: white;
     padding: 1em;
     font-size: 5em;
     border-radius: 1em;
     border: 6px solid white;
+    margin: auto;
 }
 div:focus{
     background-color: blue;
