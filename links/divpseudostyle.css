@@ -6,9 +6,10 @@ h1{
     color: red;
 }
 div{
+    padding: 1em;
     font-size: 5em;
     border-radius: 1em;
-    border: 3px white;
+    border: 3px solid white;
 }
 div:focus{
     background-color: blue;
