@@ -4,7 +4,8 @@ body{
     font-size: 1em;
 }
 div{
-    margin-bottom: 7px;
+    background-color: rgb(175, 175, 175);
+    margin-bottom: 1em;
     width: 15em;
     padding: 1em;
     font-size: 2em;
@@ -14,18 +15,22 @@ div:hover{
     background-color: rgb(68, 68, 68);
 }
 .first{
+    border-width: 5px;
     border-color: red;
     border-left-style: ridge;
 }
 .second{
+    border-width: 5px;
     border-color: yellow;
     border-left-style: ridge;
 }
 .third{
+    border-width: 5px;
     border-color: blue;
     border-left-style: ridge;
 }
 .fourth{
+    border-width: 5px;
     border-color: green;
     border-left-style: ridge;
 }
