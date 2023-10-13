@@ -1,6 +1,5 @@
 body{
     background-color: rgb(0, 161, 0);
-    font-family: 'Courier New', Courier, monospace;
     font-size: 1em;
 }
 div{
@@ -37,6 +36,9 @@ div:hover{
 h1{
     font-size: 3em;
     margin-bottom: 7px;
+}
+a{
+    text-align: center;
 }
 a:link{
     color: blue;
