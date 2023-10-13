@@ -1,0 +1,15 @@
+body{
+    font-family: sans-serif;
+    background-color: #DEFF9C;
+    font-size: 1em;
+    padding: 35%;
+    width: 35%;
+}
+.first{
+    font-weight: bolder;
+    font-size: 1.2em;
+    font-family: 'Times New Roman', Times, serif;
+}
+a{
+    color: blue;
+}
