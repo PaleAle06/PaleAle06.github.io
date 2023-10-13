@@ -12,6 +12,8 @@ body{
 }
 a{
     color: blue;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 a:visited{
     color: blue;
