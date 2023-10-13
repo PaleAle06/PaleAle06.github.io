@@ -1,9 +1,8 @@
 body{
-    background-color: #DEFF9C;
+    background-color: #e1ffcd;
 }
 a{
-    margin-left: 1em;
-    text-transform: capitalize;
+    margin-left: 2em;
 }
 a:visited{
     color: blue;
