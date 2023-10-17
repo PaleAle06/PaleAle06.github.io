@@ -1,0 +1,22 @@
+body{
+    background-color: rgb(255, 230, 119);
+    font-size: 1em;
+}
+div{
+    float: left;
+    background-color: rgb(255, 230, 119);
+    width: 20%;
+    height: auto;
+}
+a{
+    background-color: rgb(255, 230, 119);
+    border: 2px solid rgb(153, 120, 49);
+    border-radius: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    padding: auto;
+}
+a:hover{
+    color: rgb(255, 246, 119);
+    background-color: rgb(75, 58, 25);
+}
