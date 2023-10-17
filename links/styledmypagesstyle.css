@@ -1,6 +1,6 @@
 body{
-    background-color: rgb(255, 230, 119);
-    font-size: 1em;
+    background-color: rgb(255, 243, 132);
+    font-size: 3em;
 }
 div{
     float: left;
@@ -9,14 +9,20 @@ div{
     height: auto;
 }
 a{
+    color: rgb(153, 120, 49);
     background-color: rgb(255, 230, 119);
     border: 2px solid rgb(153, 120, 49);
-    border-radius: 1em;
-    margin-left: auto;
-    margin-right: auto;
-    padding: auto;
+    border-radius: 2em;
+    margin-left: 5em;
+    margin-right: 5em;
+    padding-left: 3em;
+    padding-right: 3em;
+    width: 15%;
 }
 a:hover{
     color: rgb(255, 246, 119);
     background-color: rgb(75, 58, 25);
+}
+a:visited{
+    color: rgb(153, 120, 49);
 }
