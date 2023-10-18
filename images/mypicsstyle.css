@@ -2,7 +2,6 @@ body{
     background-color: rgb(169, 255, 135);
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
-
 div{
     margin: 3px;
     float: left;
@@ -10,8 +9,10 @@ div{
     box-shadow: 5px 10px black;
 }
 p{
+    font-family: 'Courier New', Courier, monospace;
     text-align: center;
     padding-left: 50px;
     padding-right: 50px;
     margin-bottom: 3px;
+    margin-top: 4px;
 }
