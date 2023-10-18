@@ -2,9 +2,7 @@ body{
     background-color: rgb(169, 255, 135);
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
-h1{
-    text-align: center;
-}
+
 div{
     margin: 3px;
     float: left;
