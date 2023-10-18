@@ -1,7 +1,13 @@
 body{
     background-color: rgb(169, 255, 135);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+h1{
+    text-align: center;
 }
 div{
+    margin: 3px;
+    text-align: center;
     float: left;
     border: 2px solid red;
     box-shadow: 5px 10px black;
