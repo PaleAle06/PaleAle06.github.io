@@ -3,12 +3,12 @@ body{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 figure{
+    display: inline-block;
     margin: 3px;
     float: left;
     box-shadow: 5px 10px black;
 }
 figcaption{
-    font-family: 'Courier New', Courier, monospace;
     text-align: center;
     padding-left: 30px;
     padding-right: 30px;
