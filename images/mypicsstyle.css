@@ -5,7 +5,6 @@ body{
 div{
     margin: 3px;
     float: left;
-    border: 2px solid red;
     box-shadow: 5px 10px black;
 }
 p{
@@ -15,4 +14,13 @@ p{
     padding-right: 50px;
     margin-bottom: 3px;
     margin-top: 4px;
+}
+#red{
+    border: 2px solid red;
+}
+#green{
+    border: 2px solid green;
+}
+#blue{
+    border: 2px solid blue;
 }
