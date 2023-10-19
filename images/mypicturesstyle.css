@@ -2,12 +2,12 @@ body{
     background-color: rgb(169, 255, 135);
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
-figure{
+div{
     margin: 3px;
     float: left;
     box-shadow: 5px 10px black;
 }
-figcaption{
+p{
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
     padding-left: 30px;
