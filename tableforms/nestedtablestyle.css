@@ -1,0 +1,53 @@
+body{
+    background-color: rgb(219, 255, 185);  
+    font-size: 1em;
+}
+
+caption{
+    caption-side: top;
+    font-style: italic;
+}
+
+.intab{
+	margin: 2em;
+	margin-top: 10em;
+    margin-bottom: 10em;
+}
+
+.outab{
+	box-shadow: 7px 4px black;
+}
+
+table {
+    border: 3px solid rgb(0, 0, 165);
+	border-collapse: collapse;
+    width: 19em;
+    background-color: rgb(199, 255, 165);
+}
+
+thead{
+    color: red;
+}
+
+tfoot{
+    color: rgb(0, 0, 100);
+}
+
+td,th{
+	padding: 0.9em;
+    border: 1px solid  rgb(58, 113, 42);
+    text-align: center;
+}
+
+.orange{
+    color: orange;
+}
+
+.blue{
+    color: rgb(79, 0, 168);
+}
+
+#border{
+    border-left: 2px solid rgb(150, 255, 85);
+    border-right: 2px solid rgb(150, 255, 85);
+}

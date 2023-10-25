@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>nestedtable</title>
+        <link rel="stylesheet" href="nestedtablestyle.css">
+    </head>
+    <body>
+    	<h2>Nästlad tabell</h2>
+        <table class="outab">
+            <caption>Fruits/month</caption>
+            <thead>
+                <tr class="blue">
+                    <th>January</th>
+                    <th id="border">February</th>
+                    <th>March</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <table class="intab">
+                            <thead>
+                                <tr>
+                                    <th>S.N</th>
+                                    <th>Item</th>
+                                    <th>Quantity</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Apple</td>
+                                    <td>5</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Mango</td>
+                                    <td>3</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Orange</td>
+                                    <td>2</td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td colspan="2">Total</td>
+                                    <td>10</td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </td>
+                    <td>
+                        <table class="intab">
+                            <thead>
+                                <tr>
+                                    <th>S.N</th>
+                                    <th>Item</th>
+                                    <th>Quantity</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Apple</td>
+                                    <td>2</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Mango</td>
+                                    <td>2</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Orange</td>
+                                    <td>1</td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td colspan="2">Total</td>
+                                    <td>5</td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </td>
+                    <td>
+                        <table class="intab">
+                            <thead>
+                                <tr>
+                                    <th>S.N</th>
+                                    <th>Item</th>
+                                    <th>Quantity</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Apple</td>
+                                    <td>3</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Mango</td>
+                                    <td>6</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Orange</td>
+                                    <td>1</td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td colspan="2">Total</td>
+                                    <td>10</td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr class="orange">
+                    <td colspan="2" id="border">Total</td>
+                    <td id="border">25</td>
+                </tr>
+            </tfoot>
+        </table>
+    </body>
+</html>
