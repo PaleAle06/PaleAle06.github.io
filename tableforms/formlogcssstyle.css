@@ -1,0 +1,22 @@
+body{
+    background-color: rgb(219, 255, 185); 
+    display: inline-block;
+}
+
+label{
+    color: blue;
+}
+
+label,input{
+	margin-top: 1em;
+	margin-bottom: 3em;
+}
+
+input{
+	margin-left: 4em;
+}
+
+div{
+	width: 25em;
+	text-align: center;
+}
