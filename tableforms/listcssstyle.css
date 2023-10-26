@@ -1,0 +1,35 @@
+body{
+    background-color: rgb(219, 255, 185); 
+}
+
+h2{
+    margin-left: 0.5em;
+}
+
+h3{
+	margin-bottom: 0em;
+}
+
+dl,ul,ol{
+	margin-top: 0em;
+    width: 35em;
+    border: 2px solid blue;
+}
+dl{
+    width: 33em;
+    background-color: white;
+    color: rgb(183, 0, 255);
+    font-style: italic;
+}
+
+.square{
+	list-style-type: square;
+}
+
+.none{
+	list-style-type:none;
+}
+
+.roman{
+    list-style-type: upper-roman;
+}
