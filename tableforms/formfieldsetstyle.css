@@ -7,6 +7,10 @@ fieldset{
     width:25em;
 }
 
+div{
+	width: 25em;
+}
+
 .center{
 	margin-top:1.5em;
 	text-align:center;
