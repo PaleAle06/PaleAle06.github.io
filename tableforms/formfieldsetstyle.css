@@ -1,0 +1,29 @@
+body{
+	background-color: rgb(231, 255, 174);
+}
+
+fieldset{
+	border-color: rgb(255, 206, 255);
+    width:25em;
+}
+
+.center{
+	margin-top:1.5em;
+	text-align:center;
+}
+
+legend{
+	width:15em;
+    background-color: rgb(255, 214, 221);
+    color: rgb(173, 0, 173);
+}
+
+input{
+	margin-top:1.5em;
+    margin-bottom:1.5em;
+	margin-left:8px;
+}
+textarea{
+	width:20em;
+    height: 5em;
+}
