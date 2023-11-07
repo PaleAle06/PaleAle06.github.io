@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+     <head>
+        <meta charset="utf-8">
+        <title>window</title>
+        <script>
+        window.onload = function(){
+            alert("webbsidan är laddad")
+        }
+        window.onbeforeunload = function(event){
+            event.preventDefault();
+            return (event.ReturnValue == "Den här sidan vill att du bekräftar att du vill lämna sidan - information som du angett kanske inte sparas")            
+        }
+        </script>
+    </head>
+     <body>
+     	<p style="text-align: center; font-size: 3em; background-color: aquamarine;">
+        	<a href="https://www.aftonbladet.se/">Läs Aftonbladet</a>
+		</p>
+
+     </body>
+</html>
