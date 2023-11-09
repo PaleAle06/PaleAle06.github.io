@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<label for="num">Enter number(x>0):</label> <input type="text" id="num">
+
+
+<script>
+var x = 0;
+var i = 1;
+var document.getElementById("num").innerHTML = num;
+if (num>0){
+	while(i<num+1){
+		x += i + x;
+        i++;
+    }
+    document.write("<br>");
+    document.write(x);
+}
+
+else if (num<1){
+document.write("<br>");
+document.write("Error: Remember x>0");
+}
+</script>
+
+<!--<button onclick="sum()">Summerize</button>-->
+</body>
+</html>
