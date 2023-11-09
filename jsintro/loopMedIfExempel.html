@@ -1,29 +1,32 @@
 <!DOCTYPE html>
 <html>
-<body>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
 
-<label for="num">Enter number(x>0):</label> <input type="text" id="num">
+        <label for="num">Enter number(number>0):</label> <input type="number" id="num" onchange="main()">
 
+        <script>
 
-<script>
-var x = 0;
-var i = 1;
-var document.getElementById("num").innerHTML = num;
-if (num>0){
-	while(i<num+1){
-		x += i + x;
-        i++;
-    }
-    document.write("<br>");
-    document.write(x);
-}
+        function main() {
+            var x = 0;
+            var i = 1;
+            var num = parseInt(document.getElementById("num").value);
 
-else if (num<1){
-document.write("<br>");
-document.write("Error: Remember x>0");
-}
-</script>
+            if (num > 0) {
+                while(i < num+1){
+                    x = i + x;
+                    i++;
+                }
+                document.write("<br><br>" + x)
+            }
+            else {
+                document.write("<br>Error: Remember number>0");    
+            }
+        }
 
-<!--<button onclick="sum()">Summerize</button>-->
-</body>
+        </script>
+
+    </body>
 </html>
