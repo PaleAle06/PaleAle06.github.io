@@ -6,13 +6,12 @@
     <body>
 
         <label for="num">While<br>Enter number(number>0):</label> <input type="number" id="num" onchange="main()">
-        <p id="ans"></p>   <p id="error"></p>
+        <p id="ans"></p>
         
         <label for="num">For<br>Enter number(number>0):</label> <input type="number" id="numb" onchange="semi()"><br>
-        <p id="ansb"></p>  <p id="errorb"></p>
-        
-        <script>
+        <p id="ansb"></p>
 
+        <script>
     function main() {
       var x = 0;
       var i = 1;
@@ -25,10 +24,9 @@
         }
         //document.write("<br><br>" + x);
         document.getElementById("ans").innerHTML = x;
-        document.getElementById("error").innerHTML = "";
       } 
       else {
-        document.getElementById("error").innerHTML = "<br>Error: Remember number>0";
+        document.getElementById("ans").innerHTML = "Error: Remember number>0";
       }
     }
     
@@ -38,13 +36,13 @@
       var numb = parseInt(document.getElementById("numb").value);
       for (numb > 0;y < numb + 1;y++) {
       	z += y;
-        document.getElementById("errorb").innerHTML = "";
+
       }
       //document.write("<br><br>" + x);
       document.getElementById("ansb").innerHTML = z;
       
       if (numb < 1) {
-      	document.getElementById("errorb").innerHTML = "<br>Error: Remember number>0";
+      	document.getElementById("ansb").innerHTML = "Error: Remember number>0";
       }
     }
         </script>
