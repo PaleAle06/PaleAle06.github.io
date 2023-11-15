@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>facultet</title>
+    </head>
+    <body onload="inmatningFakultet()">
+        <script>
+            function factorial(x) {
+                if (x < 0) throw new Error("x must not be negative");
+
+            var f=1;
+            for(; x > 1; f *= x, x--);
+                return f;
+            }
+            function inmatningFakultet() {
+            try {
+                var n = Number(prompt("Please enter a positive integer", ""));
+                var f = factorial(n);
+            alert(n + "! = " + f);
+            }
+            catch (ex) {alert(ex);}
+            }
+        </script>
+    </body>
+</html>
