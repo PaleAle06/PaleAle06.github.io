@@ -5,6 +5,9 @@
         <title>facultet</title>
     </head>
     <body onload="inmatningFakultet()">
+
+        <h1 id="res"></h1>
+
         <script>
             function factorial(x) {
                 if (x < 0) throw new Error("x must not be negative");
@@ -17,7 +20,7 @@
             try {
                 var n = Number(prompt("Please enter a positive integer", ""));
                 var f = factorial(n);
-            alert(n + "! = " + f);
+                document.getElementById("res").innerHTML = f;
             }
             catch (ex) {alert(ex);}
             }
