@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>array</title>
+    </head>
+    <body>
+      <script>
+        var text = "";
+        var cities = ["Dubai","Paris","Mumbai","Dallas","Houston","Madrid"];
+
+        function main(item, index) {
+          text += "cities["+index+"] = " + item + "<br>";
+        }
+
+        for(var i = 0; i < 3; i++) {
+          var city = prompt("Enter city","");
+          cities.push(city); 
+        }
+
+        document.write("After push<br>");
+        cities.forEach(main);
+        document.write(text);
+        text = "";
+
+        cities.pop();
+        document.write("<br>After pop<br>");
+        cities.forEach(main);
+        document.write(text)
+        text = "";
+
+        cities.shift();
+        document.write("<br>After shift<br>");
+        cities.forEach(main);
+        document.write(text)
+        text = "";
+
+        cities.splice(2, 0, "Stockholm");
+        document.write("<br>After splice<br>");
+        cities.forEach(main);
+        document.write(text)
+        text = "";
+
+        delete cities[2];
+        document.write("<br>After delete<br>");
+        cities.forEach(main);
+        document.write(text)
+        text = "";
+
+        document.write("<br>Totala Element: " + cities.length)
+        document.write("<br>Dallas' position i listan: " + cities.indexOf('Dallas'))
+        document.write("<br>Första staden: " + cities[0])
+        document.write("<br>Size of cities: " + cities.length)
+        cities.length = 1;
+        document.write("<br>Size of cities is now: " + cities.length)
+      </script>
+    </body>
+</html>
