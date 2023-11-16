@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>math</title>
+    </head>
+    <body>
+        <script>
+            var num = parseInt(prompt("Enter a number",""));
+            document.write("Number chosen is: " + "<b>" + num + "</b>");
+            document.write("<br>Log10 is: " + "<b>" + Math.log10(num).toFixed(2) + "</b>");
+            document.write("<br>Square root is: " + "<b>" + Math.sqrt(num).toFixed(2) + "</b>");
+            document.write("<br>Value of Pi is: " + "<b>" + Math.PI.toFixed(2) + "</b>");
+            document.write("<br>Power to 2 is: " + "<b>" + Math.pow(num,2).toFixed(2) + "</b>");
+            document.write("<br>Sin is: " + "<b>" + Math.sin(num).toFixed(2) + "</b>");
+            document.write("<br>Random number between 5 - 15: " + "<b>" + (Math.random() * (15 - 5) + 5).toFixed(2) + "</b>");
+        </script>
+    </body>
+</html>
