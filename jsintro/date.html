@@ -9,7 +9,8 @@
             document.write("<b>Datum:</b> " + Date());
             document.write("<br><b>Specifikt datum:</b> " + new Date(2014, 7, 30));
             document.write("<br><b>År: </b>" + new Date().getFullYear());
-            document.write("<br><b>Tid - </b>" + Date().getHours() + " : " + Date().getMinutes());
+            document.write("<br><b>Tid - </b>" + new Date().getHours() + " : " + new Date().getMinutes());
+            document.write("<br><b>Dagar tills nyår: </b>" + Math.floor((new Date(new Date().getFullYear() + "December 31") - new Date())/(1000*60*60*24)+1));
         </script>
     </body>
 </html>
