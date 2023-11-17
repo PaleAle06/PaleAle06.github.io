@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>form</title>
+
+        <script> 
+            document.getElementById("ex").style.background = "lightblue";
+            document.getElementById("1").style.background = "lightblue";
+            document.getElementById("2").style.background = "lightblue";
+            document.getElementById("3").style.background = "lightblue";
+
+            function example() {
+                alert(document.getElementById("text").value);
+            document.getElementById("text").value = "";
+            }
+
+            function jap() {
+                alert("Moshi Moshi")
+            }
+
+            function ind() {
+                alert("Namaste")
+            }
+
+            function kin() {
+                alert("Ni Hao")
+            }
+        </script>
+    </head>
+    <body>
+        <form>
+            <label for="Example">Exempel: </label><input type="text" for="Example" id="text"><br><br>
+            <input type="button" value="Submit!" onclick="example()" id="ex"><br><br>
+          </form>
+          
+          <form>
+            <h4>Hej i olika länder</h4>
+            <input type="button" value="Japanesiska!" onclick="jap()" id="1">
+            <input type="button" value="Indienesiska!" onclick="ind()" id="2">
+            <input type="button" value="Kinanesiska!" onclick="kin()" id="3">
+            <br><br>
+          </form>
+            
+          <form>
+            <label for="Example">Namn: </label><input type="text" for="Example" id="namn"><br>
+            <label for="Example">Stad: </label><input type="text" for="Example" id="stad">
+          </form>
+    </body>
+</html>
