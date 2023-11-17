@@ -26,11 +26,15 @@
             function kin() {
                 alert("Ni Hao")
             }
+
+            function color() {
+                document.getElementById("text").style.background = "red";
+            }
         </script>
     </head>
     <body>
         <form>
-            <label for="Example">Exempel: </label><input type="text" for="Example" id="text"><br><br>
+            <label for="Example">Exempel: </label><input type="text" for="Example" id="text" onfocus="color()"><br><br>
             <input type="button" value="Submit!" onclick="example()" id="ex"><br><br>
           </form>
           
