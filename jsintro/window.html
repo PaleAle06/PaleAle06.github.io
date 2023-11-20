@@ -31,7 +31,8 @@
             function PopupInfo() {
                 var parent = popupWindow?.parent;
                 if (parent) {
-                    document.write(`outer height: ${parent}`)
+                    document.write(`outerHeight: ${parent.outerHeigth}`)
+                    document.write(`Screen width: ${parent.screen.width}`)
                 }
             }
         </script>
