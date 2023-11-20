@@ -19,16 +19,17 @@
                 popupWindow = window.open("snowleopard.jpg", "Snowleapard", windowpop);
             }
             function closeWindow() {
-                popupWindow.close();
+                popupWindow?.close();
+                popupWindow = null;
             }
             function moveWindow() {
-                popupWindow.moveTo(250,0);
+                popupWindow?.moveTo(250,0);
             }
             function alterWindow() {
-                popupWindow.resizeTo(700, 350);
+                popupWindow?.resizeTo(700, 350);
             }
             function PopupInfo() {
-                popupWindow.parent();
+                popupWindow?.parent();
             }
         </script>
     </head>
