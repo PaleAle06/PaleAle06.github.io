@@ -17,7 +17,7 @@
             window.setWidth = 1050;
 
             function openWindow() {
-                windowpop = window.open("snowleopard.jpg", "Snowleapard", windowpop);
+                window.open("snowleopard.jpg", "Snowleapard", windowpop);
             }
             function closeWindow() {
                 myWindow = window.close;
@@ -41,9 +41,9 @@
         <h4 style="margin-bottom:0">Press a button</h4>
         <input type="button" value="Open Popup" onclick="openWindow()"><br>
         <input type="button" value="Close Popup" onclick="closeWindow()"><br>
-        <input type="button" value="Move Popup" onclick="moveWindow"><br>
-        <input type="button" value="Alter Size" onclick="alterWindow"><br>
-        <input type="button" value="Info of 'parent' window" onclick="PopupInfo"><br>
+        <input type="button" value="Move Popup" onclick="moveWindow()"><br>
+        <input type="button" value="Alter Size" onclick="alterWindow()"><br>
+        <input type="button" value="Info of 'parent' window" onclick="PopupInfo()"><br>
         <input type="button" value="Open 2" onclick="openPopup('snowleopard.jpg', 640, 480)">
     </body>
 </html>
