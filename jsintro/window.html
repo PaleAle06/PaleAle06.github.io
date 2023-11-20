@@ -12,27 +12,24 @@
         }
         </style>
         <script>
-            var windowpop = "width=1050,height=400,left=100,top=100";
+            const windowpop = "width=1050,height=400,left=100,top=100";
+            var popupWindow = null;
 
             function openWindow() {
-                window.open("snowleopard.jpg", "Snowleapard", windowpop);
+                popupWindow = window.open("snowleopard.jpg", "Snowleapard", windowpop);
             }
             function closeWindow() {
-                windowpop.close();
+                popupWindow.close();
             }
             function moveWindow() {
-                windowpop.moveTo(250,0);
+                popupWindow.moveTo(250,0);
             }
             function alterWindow() {
-                windowpop.resizeTo(700, 350);
+                popupWindow.resizeTo(700, 350);
             }
             function PopupInfo() {
-                windowpop.parent();
-            }/*
-            function openPopup(url, width, height) {
-                const features = `width=${width},height=${height}`
-                window.open(url, "foo", features)
-            }*/
+                popupWindow.parent();
+            }
         </script>
     </head>
     <body>
@@ -42,6 +39,5 @@
         <input type="button" value="Move Popup" onclick="moveWindow()"><br>
         <input type="button" value="Alter Size" onclick="alterWindow()"><br>
         <input type="button" value="Info of 'parent' window" onclick="PopupInfo()"><br>
-        <input type="button" value="Open 2" onclick="openPopup('snowleopard.jpg', 640, 480)">
     </body>
 </html>
