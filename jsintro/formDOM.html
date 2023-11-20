@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>formDOM</title>
+        <style>
+            body{
+            background-color:purple;
+            }
+        </style>
+        <script>
+            function BGcolor() {
+                for(var i=0; i<col.color.length; i++) {
+                if(col.color[i].checked) {
+                    document.body.style.backgroundColor = col.color[i].value
+                }
+            }
+            }
+            function resetBG() {
+                document.body.style.backgroundColor = "purple";
+            }
+        </script>
+    </head>
+    <body id="b">
+        <form name="col">
+            <input type="radio" for="backgroundColor" name="color" value="green"><label for="backgroundColor">Grön</label><br>
+            <input type="radio" for="backgroundColor" name="color" value="#ff4444"><label for="backgroundColor">Rödgrön</label><br>
+            <input type="radio" for="backgroundColor" name="color" value="aqua"><label for="backgroundColor">Akvamarin</label><br>
+            <input type="radio" for="backgroundColor" name="color" value="blue"><label for="backgroundColor">Blå</label><br>
+            <input type="radio" for="backgroundColor" name="color" value="#ff3388"><label for="backgroundColor">Rödblå</label> <br><br>
+            
+            <input type="button" value="Change Background" onclick="BGcolor()">
+            <input type="button" value="Reset" onclick="resetBG()">
+        </form>
+    </body>
+</html>
