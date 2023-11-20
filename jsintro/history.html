@@ -23,16 +23,13 @@
             function showlength(){
                 document.getElementById("list").innerHTML = lengthR;
             }
-            function go() {
-                history.go(2);
-            }
         </script>
     </head>
     <body>
         <form>
             <input type="button" value="Tillbaka" onclick="history.back()">
             <input type="button" value="Frammåt" onclick="history.forward()">
-            <input type="button" value="Gå" onclick="history.go()">
+            <input type="button" value="Gå" onclick="history.go(2)">
             <input type="button" value="Längd" onclick="showlength()">
         </form>
         <p>Number of URLs in history list:</p>
