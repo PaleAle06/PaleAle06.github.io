@@ -29,7 +29,10 @@
                 popupWindow?.resizeTo(700, 350);
             }
             function PopupInfo() {
-                popupWindow?.parent();
+                var parent = popupWindow?.parent;
+                if (parent) {
+                    document.write(`outer height: ${parent}`)
+                }
             }
         </script>
     </head>
