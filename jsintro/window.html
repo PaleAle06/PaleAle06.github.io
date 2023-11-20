@@ -13,7 +13,7 @@
         </style>
         <script>
             const windowpop = "width=1050,height=400,left=100,top=100";
-            var popupWindow = null;
+            let popupWindow = null;
 
             function openWindow() {
                 popupWindow = window.open("snowleopard.jpg", "Snowleapard", windowpop);
@@ -29,10 +29,13 @@
                 popupWindow?.resizeTo(700, 350);
             }
             function PopupInfo() {
-                var parent = popupWindow?.parent;
+                let parent = popupWindow?.parent;
                 if (parent) {
-                    document.write(`outerHeight: ${parent.outerHeigth}`)
-                    document.write(`Screen width: ${parent.screen.width}`)
+                    const result = document.getElementById("result");
+                    result.innerHTML = 
+                        `outerHeight: ${parent.outerHeigth}<br>
+                         outerWidth: ${parent.outerWidth}<br>
+                         Screen width: ${parent.screen.width}`
                 }
             }
         </script>
@@ -44,5 +47,6 @@
         <input type="button" value="Move Popup" onclick="moveWindow()"><br>
         <input type="button" value="Alter Size" onclick="alterWindow()"><br>
         <input type="button" value="Info of 'parent' window" onclick="PopupInfo()"><br>
+        <div id="result"></div>
     </body>
 </html>
