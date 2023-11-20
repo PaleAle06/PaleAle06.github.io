@@ -12,9 +12,12 @@
         }
         </style>
         <script>
-            var window = "width=1050, height=400, left=100, top=100"
+            var windowpop = "width=1050, height=400, left=100, top=100";
+            window.outerHeight = 400;
+            window.outerWidth = 1050;
+
             function openWindow() {
-                window = window.open("snowleopard.jpg", "Snowleapard", window);
+                windowpop = window.open("snowleopard.jpg", "Snowleapard", window);
             }
             function closeWindow() {
                 myWindow = window.close;
@@ -23,7 +26,7 @@
                 myWindow = window.moveTo(250,0);
             }
             function alterWindow() {
-                myWindow = window.resizeTo(900, 600);
+                myWindow = window.resizeTo(700, 350);
             }
             function PopupInfo() {
                 myWindow = window.parent();
