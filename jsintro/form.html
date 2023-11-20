@@ -3,7 +3,17 @@
     <head>
         <meta charset="utf-8">
         <title>form</title>
-
+        <style>
+            form{
+              width:20em;  
+            }
+            
+            label{
+              width:5em;
+              text-align:center;
+              display:inline-block;
+            }
+        </style>
         <script> 
             document.getElementById("ex").style.background = "lightblue";
             document.getElementById("1").style.background = "lightblue";
@@ -12,7 +22,7 @@
 
             function example() {
                 alert(document.getElementById("text").value);
-            document.getElementById("text").value = "";
+            		document.getElementById("text").value = "";
             }
 
             function jap() {
@@ -30,6 +40,7 @@
             function color() {
                 document.getElementById("text").style.background = "red";
             }
+       
         </script>
     </head>
     <body>
@@ -48,7 +59,7 @@
             
           <form>
             <label for="Example">Namn: </label><input type="text" for="Example" id="namn"><br>
-            <label for="Example">Stad: </label><input type="text" for="Example" id="stad">
+            <label for="Example">Stad:</label><input type="text" for="Example" id="stad">
           </form>
     </body>
 </html>
