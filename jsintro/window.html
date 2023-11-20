@@ -20,16 +20,16 @@
                 window.open("snowleopard.jpg", "Snowleapard", windowpop);
             }
             function closeWindow() {
-                windowpop = window.close();
+                window.close();
             }
             function moveWindow() {
-                windowpop = window.moveTo(250,0);
+                window.moveTo(250,0);
             }
             function alterWindow() {
-                windowpop = window.resizeTo(700, 350);
+                window.resizeTo(700, 350);
             }
             function PopupInfo() {
-                windowpop = window.parent();
+                window.parent();
             }/*
             function openPopup(url, width, height) {
                 const features = `width=${width},height=${height}`
