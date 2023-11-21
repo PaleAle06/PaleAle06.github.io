@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>tablebody</title>
+        <style>
+        body{
+    background-color: rgb(219, 255, 185);  
+    font-size: 1em;
+}
+
+caption{
+    caption-side: top;
+    font-style: italic;
+}
+
+table {
+    border: 3px solid rgb(0, 0, 165);
+	  border-collapse: collapse;
+    width: 25em;
+    background-color: rgb(199, 255, 165);
+}
+
+thead{
+    color: red;
+}
+
+tfoot{
+    color: rgb(0, 0, 60);
+}
+
+td,th{
+	  padding: 0.1em;
+    border: 2px solid  rgb(38, 63, 22);
+    text-align: center;
+}
+form{
+  display: inline;
+  float:left;
+}
+
+#formula{
+  margin: 5em;
+  
+}
+#driver{
+    margin-top: 5em;
+    margin-left:5em;
+}
+
+fieldset{
+  width:20em;
+}
+
+div{
+	width: 25em;
+	margin-left: 0%;
+}
+
+.center{
+	margin-top:1.5em;
+	margin-left:32%
+}
+
+legend{
+	width:15em;
+    background-color: lightgreen;
+    color: rgb(173, 0, 173);
+}
+
+input{
+	  margin-top:1.5em;
+    margin-bottom:1.5em;
+
+}
+textarea{
+	  width:20em;
+    height: 5em;
+}
+
+label{
+  color:blue;
+}
+.drivername{
+  width:12em;
+}
+
+        </style>
+    </head>
+    <body>
+      <form id="formula">
+        <h1>Formula 1</h1>
+        <table>
+            <caption>2023 driver standings</caption>
+            <thead>
+                <tr>
+                    <th>Pos</th>
+                    <th>Driver</th>
+                    <th>Nationality</th>
+                    <th>Car</th>
+                    <th>PTS</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Verstappen</td>
+                    <td>NED</td>
+                    <td>Red Bull</td>
+                    <td>549</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Perez</td>
+                    <td>MEX</td>
+                    <td>Red Bull</td>
+                    <td>273</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Hamilton</td>
+                    <td>GBR</td>
+                    <td>Mercedes</td>
+                    <td>232</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Sainz</td>
+                    <td>ESP</td>
+                    <td>Ferrari</td>
+                    <td>200</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Alonso</td>
+                    <td>ESP</td>
+                    <td>Aston Martin</td>
+                    <td>200</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Norris</td>
+                    <td>GBR</td>
+                    <td>McLaren</td>
+                    <td>195</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="4">Total 6 drivers</td>
+                    <td>Total:1649</td>
+                </tr>
+            </tfoot>
+        </table>
+      </form>
+      
+      
+      <form id="driver">
+        <fieldset>
+            <legend>Name of driver</legend>
+
+            <label for="Name">First Name:*</label> <input type="text" class="drivername" name="Username" size="25" style="margin-left:43px;">
+            <br>
+            <label for="LastName">Last Name:*</label> <input type="text" class="drivername" name="Password" size="25" style="margin-left:46px;">
+        </fieldset>
+
+        <fieldset>
+            <legend>Car*</legend>
+            
+              <label for="Car">Red Bull</label> <input name="car" type="radio" style="margin-left:59px;"><br>
+              <label for="Car">Mercedes</label> <input name="car" type="radio" style="margin-left:55px;"><br>
+              <label for="Car">Ferrari</label> <input name="car" type="radio" style="margin-left:75px;"><br>
+              <label for="Car">Aston Martin</label> <input name="car" type="radio" style="margin-left:33px;">
+        </fieldset>
+
+        <fieldset>
+            <legend>Nationality</legend>
+            
+            <label for="Fruit">Choose a nationality:</label>
+            <select style="margin-left:1em;">
+                <option value="">NED</option>
+                <option value="">ESP</option>
+                <option value="">GBR</option>
+                <option value="">MEX</option>
+            </select>
+        </fieldset>
+        <div class="center"><input type="submit" value="Send" style="width:8em;"></div>
+      </form>
+    </body>
+</html>

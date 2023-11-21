@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>math</title>
+        <style>
+        .tal{
+  margin: 2em;
+  width: 7em;
+}
+
+.button{
+  width: 5em;
+  background: cyan;
+  font-style: italic;
+}
+
+        </style>
+        <script>
+function main1() {
+	var num = parseInt(document.getElementById("num").value)
+	var numb = parseInt(document.getElementById("numb").value)
+  alert(num + numb)
+}
+
+function main2() {
+	var num = parseInt(document.getElementById("num").value)
+	var numb = parseInt(document.getElementById("numb").value)
+  alert(num - numb)
+}
+
+function main3() {
+	var num = parseInt(document.getElementById("num").value)
+	var numb = parseInt(document.getElementById("numb").value)
+  alert(num * numb)
+}
+
+function main4() {
+	var num = parseInt(document.getElementById("num").value)
+	var numb = parseInt(document.getElementById("numb").value)
+  alert(num / numb)
+}
+        </script>
+    </head>
+    <body>
+
+      <form id="tal1">
+        <label class="tal">Tal 1: </label><input type="text" class="tal" id="num">
+      </form>
+
+      <form id="tal2">
+        <label class="tal">Tal 2: </label><input type="text" class="tal" id="numb">
+      </form>
+
+      <form>
+        <input type="button" value="+" class="button" onclick="main1()" id="add">
+        <input type="button" value="-" class="button" onclick="main2()">
+        <input type="button" value="*" class="button" onclick="main3()">
+        <input type="button" value="/" class="button" onclick="main4()">
+      </form>
+
+    </body>
+</html>
