@@ -4,24 +4,52 @@
         <meta charset="utf-8">
         <title>timer</title>
         <style>
-            #box{
-                position: absolute;
-                background-color: yellow;
-                left: 10px;
-                top: 400px;
-                height: 150px;
-                width: 150px;
-            }
+input {
+    width: 10em;
+    height: 2em;
+    color: darkred;
+    border: 2px solid rgb(129, 129, 129);
+    border-radius: 3px;
+    background-color: rgb(224, 224, 224);
+    font-size: 1.2em;
+    display: block;
+    margin: 20px;
+}
+#box {
+    position: absolute;
+    background-color: yellow;
+    top: 300px;
+    height: 150px;
+    width: 150px;
+}
         </style>
         <script>
+            const box = document.getElementById("box");
+            let boxX = 10;
+            let intervalId = null;
 
+            function moveBox() {
+            boxX += 15;
+                box.setAttribute("style", `left: ${boxX}px`);
+            }
+
+            function startInterval() {
+                if (!intervalId) {
+                    intervalId = window.setInterval(() => moveBox(), 500);
+            }
+            }
+
+            function cancelInterval() {
+                window.clearInterval(intervalId);
+            intervalId = null;
+            }
         </script>
     </head>
     <body>
-        <input type="button" value="Set Interval" onclick="">
+        <input type="button" value="Set Interval" onclick="startInterval()">
         <input type="button" value="Set Timeout" onclick="">
         <input type="button" value="Clear Timeout" onclick="">
-        <input type="button" value="Clear Interval" onclick="">
-        <div id="box"></div>
+        <input type="button" value="Clear Interval" onclick="cancelInterval()">
+        <div id="box" style="left: 10px"></div>
     </body>
 </html>
