@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+	<meta charset="utf-8">
+	<title>Location</title>
+    <style>
+        input
+        {
+            width: 210px;
+            height: 40px;
+            color: brown;
+            border: 2px solid rgb(196, 196, 196);
+            border-radius: 3px;
+            background-color: rgb(233, 235, 240);
+            font-size: 1.2em;
+            display: block;
+            margin: 20px;
+        }
+    </style>
+	<script>
+        document.write("<div>Href: " + location.href + "</div>" + "<br/>")
+        document.write("<div>Pathname: " + location.pathname + "</div>" + "<br/>")
+        document.write("Protocol: " + location.protocol)
+        function aftonB(){
+            location.assign("http://www.aftonbladet.se/")
+        }
+        function express(){
+            location.replace("http://www.expressen.se/")
+        }
+        function re(){
+            location.reload()
+        }
+	</script>
+</head>
+<body>
+    <form>
+        <input type="button" value="Gå till - assign" onclick="aftonB()">
+        <input type="button" value="Gå till - replace" onclick="express()">
+        <input type="button" value="Ladda om - uppdatera" onclick="re()">
+    </form>
+</body>
+</html>
