@@ -23,34 +23,36 @@ input {
     width: 150px;
 }
         </style>
-	<script>
-        var Xpos = 0;
-        var myTimeout;
-        var myInterval;
-        function moveX(){
-            Xpos+=15;
-            var left = Xpos + "px";
-            document.getElementById("myBox").style.left=left;
-        }
-        function startInterval(){
-            myInterval= setInterval(moveX,500);
-        }
-        function startTimeout(){
-            myTimeout = setTimeout(moveX,500);
-        }
-        function cancelInt(){
-            clearInterval(myInterval);
-        }
-        function cancelTim(){
-            clearTimeout(myTimer);
-        }
-	</script>
+        <script>
+            var Xpos = 0;
+            var myTimeout;
+            var myInterval;
+            function moveX(){
+                Xpos+=15;
+                var left = Xpos + "px";
+                document.getElementById("box").style.left=left;
+            }
+            function startInterval(){
+                myInterval= setInterval(moveX,500);
+            }
+            function startTimeout(){
+                myTimeout = setTimeout(moveX,500);
+            }
+            function cancelInt(){
+                clearInterval(myInterval);
+            }
+            function cancelTim(){
+                clearTimeout(myTimer);
+            }
+        </script>
     </head>
     <body>
-        <input type="button" value="Set Interval" onclick="startInterval()">
-        <input type="button" value="Set Timeout" onclick="startTimeout()">
-        <input type="button" value="Clear Timeout" onclick="cancelTim">
-        <input type="button" value="Clear Interval" onclick="cancelInt()">
+        <form>
+            <input type="button" value="Set Interval" onclick="startInterval()">
+            <input type="button" value="Set Timeout" onclick="startTimeout()">
+            <input type="button" value="Clear Timeout" onclick="cancelTim">
+            <input type="button" value="Clear Interval" onclick="cancelInt()">
+        </form>
         <div id="box" style="left: 10px"></div>
     </body>
 </html>
