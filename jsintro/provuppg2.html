@@ -17,29 +17,26 @@
 
         </style>
         <script>
-function main1() {
+function main(x) {
 	var num = parseInt(document.getElementById("num").value)
 	var numb = parseInt(document.getElementById("numb").value)
-  alert(num + numb)
+  	if(x==1){
+    	alert(num + numb)
+    }
+    else if(x==2){
+    	alert(num - numb)
+    }
+    else if(x==3){
+    	alert(num * numb)
+    }
+    else if(x==4){
+    	alert(num / numb)
+    }
+    else {
+    	alert("Error")
+    }
 }
 
-function main2() {
-	var num = parseInt(document.getElementById("num").value)
-	var numb = parseInt(document.getElementById("numb").value)
-  alert(num - numb)
-}
-
-function main3() {
-	var num = parseInt(document.getElementById("num").value)
-	var numb = parseInt(document.getElementById("numb").value)
-  alert(num * numb)
-}
-
-function main4() {
-	var num = parseInt(document.getElementById("num").value)
-	var numb = parseInt(document.getElementById("numb").value)
-  alert(num / numb)
-}
         </script>
     </head>
     <body>
@@ -53,10 +50,10 @@ function main4() {
       </form>
 
       <form>
-        <input type="button" value="+" class="button" onclick="main1()" id="add">
-        <input type="button" value="-" class="button" onclick="main2()">
-        <input type="button" value="*" class="button" onclick="main3()">
-        <input type="button" value="/" class="button" onclick="main4()">
+        <input type="button" value="+" class="button" onclick="main(1)" id="add">
+        <input type="button" value="-" class="button" onclick="main(2)">
+        <input type="button" value="*" class="button" onclick="main(3)">
+        <input type="button" value="/" class="button" onclick="main(4)">
       </form>
 
     </body>

@@ -29,8 +29,8 @@ input {
             var myInterval;
             function moveX(){
                 Xpos+=15;
-                var left = Xpos + "px";
-                document.getElementById("box").style.left=left;
+                var move = Xpos + "px";
+                document.getElementById("box").style.left = move;
             }
             function startInterval(){
                 myInterval= setInterval(moveX,500);
