@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Alignitems</title>
+        <style>
+            .first,.second,.third,.fourth{
+                display: flexbox;
+            }
+
+            .second > img{
+                align-items: end;
+            }
+            .third > img{
+                align-items: flex-start;
+            }
+            .fourth > img{
+                align-items: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Align-items with stretch,flex-end,flex-start,center</h1>
+        <div class="cards first">
+        <img src="foto1.jpg" alt="Sample photo">
+        <img src="foto2.jpg" alt="Sample photo">
+        <img src="foto3.jpg" alt="Sample photo">
+        </div>
+        <div class="second">
+            <img src="foto1.jpg" alt="Sample photo">
+            <img src="foto2.jpg" alt="Sample photo">
+            <img src="foto3.jpg" alt="Sample photo">
+        </div>
+        <div class="third">
+            <img src="foto1.jpg" alt="Sample photo">
+            <img src="foto2.jpg" alt="Sample photo">
+            <img src="foto3.jpg" alt="Sample photo">
+        </div>
+        <div class="fourth">
+            <img src="foto1.jpg" alt="Sample photo">
+            <img src="foto2.jpg" alt="Sample photo">
+            <img src="foto3.jpg" alt="Sample photo">
+        </div>
+    </body>
+</html>
