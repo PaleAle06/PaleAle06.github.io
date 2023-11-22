@@ -6,19 +6,22 @@
         <style>
             div{
                 display: flexbox;
-                flex-wrap: wrap;
             }
             .first{
                 align-items: stretch;
+                flex-wrap: wrap;
             }
             .second{
-                align-items: end;
+                align-items: flex-end;
+                flex-wrap: wrap;
             }
             .third{
                 align-items: flex-start;
+                flex-wrap: wrap;
             }
             .fourth{
                 align-items: center;
+                flex-wrap: wrap;
             }
             img{
                 border: 2px solid black;
@@ -29,10 +32,10 @@
     </head>
     <body>
         <h1>Align-items with stretch,flex-end,flex-start,center</h1>
-        <div class="cards first">
-        <img src="foto1.jpg" alt="Sample photo">
-        <img src="foto2.jpg" alt="Sample photo">
-        <img src="foto3.jpg" alt="Sample photo">
+        <div class="first">
+            <img src="foto1.jpg" alt="Sample photo">
+            <img src="foto2.jpg" alt="Sample photo">
+            <img src="foto3.jpg" alt="Sample photo">
         </div>
         <div class="second">
             <img src="foto1.jpg" alt="Sample photo">
