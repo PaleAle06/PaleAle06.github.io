@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>flexorderdir</title>
+        <style>
+          .head{
+            display: flex;
+            
+          }
+          .header{
+            background-color: darkred;
+            margin: 0;
+            text-align: center;
+            padding: 0.8em;
+            font-size: 2em;
+            font-style: italic;
+          }
+          .article{
+            flex: 60%;
+            background-color: cyan;
+          }
+          #news{
+            order: -1;
+          }
+          #news,#contact{
+            flex: 20%;
+            background-color: pink;
+          }
+          .footer{
+            font-size: 6px;
+            margin-top: 0;
+            background-color: purple;
+            padding: 2em;
+            text-align: right;
+          }
+          div{
+            flex: 1 1 auto;
+            text-align: center;
+          }
+        </style>
+    </head>
+    <body>
+    <p class="header">Hip & happening inline</p>
+    
+    <div class="head">
+      <div class="article"><h2>Where It's At</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget tristique elit. Etiam euismod dictum lectus, ut efficitur diam tristique facilisis. Cras sem tortor, dignissim at massa ut,fermentum molestie ligula. Mauris purus nisi, lacinia ac sem id, pretium sagittis mi. Nunc ultricies odio id ipsum bibendum, non posuere nisl consequat. Aliquam non pellentesque velit.     Quisque sit amet pretium odio. In convallis quis lectus non laoreet. Integer non erat quis eros elementum ultricies quis in tellus. </p></div>
+     <div id="news"><h2>News</h2></div>
+     <div id="contact"><h2>Contact</h2></div>
+    </div> 
+  <p class="footer">The small print</p>
+
+    </body>
+</html>
