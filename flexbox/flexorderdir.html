@@ -4,12 +4,12 @@
         <meta charset="utf-8">
         <title>flexorderdir</title>
         <style>
-          body{
-            margin: 0px;
-          }
+        
           .head{
             display: flex;
-            
+            justify-content:flex-start;
+            margin: 0px;
+            width:100%;
           }
           .header{
             background-color: darkred;
@@ -18,10 +18,11 @@
             padding: 0.8em;
             font-size: 2em;
             font-style: italic;
+            width:100%;
           }
           .article{
             flex: 5;
-            flex: 60%;
+          
             text-align: center;
             background-color: cyan;
             margin: 0px;
@@ -29,20 +30,20 @@
           #news{
             flex: 1;
             order: -1;
-            flex: 20%;
+           
             background-color: pink;
             margin: 0px;
           }
           #contact{
             flex: 1;
-            flex: 20%;
+           padding:20px;
             background-color: pink;
             margin: 0px;
           }
           .footer{
             margin: 0px;
             font-size: 6px;
-            margin-top: 0px;
+           
             background-color: purple;
             padding: 2.5em;
             text-align: right;
