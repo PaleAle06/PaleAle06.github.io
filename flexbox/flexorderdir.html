@@ -4,12 +4,10 @@
         <meta charset="utf-8">
         <title>flexorderdir</title>
         <style>
-        
           .head{
             display: flex;
-            justify-content:flex-start;
-            margin: 0px;
-            width:100%;
+            margin: 0;
+            background-color: pink;
           }
           .header{
             background-color: darkred;
@@ -18,32 +16,30 @@
             padding: 0.8em;
             font-size: 2em;
             font-style: italic;
-            width:100%;
           }
           .article{
-            flex: 5;
-          
+            flex: 6;
             text-align: center;
             background-color: cyan;
-            margin: 0px;
           }
           #news{
-            flex: 1;
+            font-style: italic;
+            align-self: center;
+            text-align: center;
+            flex: 2;
             order: -1;
-           
             background-color: pink;
-            margin: 0px;
           }
           #contact{
-            flex: 1;
-           padding:20px;
+            font-style: italic;
+            align-self: flex-end;
+            text-align: center;
+            flex: 2;
             background-color: pink;
-            margin: 0px;
           }
           .footer{
-            margin: 0px;
-            font-size: 6px;
-           
+            margin: 0;
+            font-size: 5px;
             background-color: purple;
             padding: 2.5em;
             text-align: right;
@@ -51,14 +47,19 @@
         </style>
     </head>
     <body>
-    <p class="header">Hip & happening inline</p>
-    
-    <div class="head">
-      <div class="article"><h2>Where It's At</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget tristique elit. Etiam euismod dictum lectus, ut efficitur diam tristique facilisis. Cras sem tortor, dignissim at massa ut,fermentum molestie ligula. Mauris purus nisi, lacinia ac sem id, pretium sagittis mi. Nunc ultricies odio id ipsum bibendum, non posuere nisl consequat. Aliquam non pellentesque velit.     Quisque sit amet pretium odio. In convallis quis lectus non laoreet. Integer non erat quis eros elementum ultricies quis in tellus. </p></div>
-     <div id="news"><h2>News</h2></div>
-     <div id="contact"><h2>Contact</h2></div>
-    </div> 
-  <p class="footer">The small print</p>
+      <p class="header">Hip &amp; happening inline</p>
 
+      <div class="head">
+        <div class="article">
+        <h2>Where It's At</h2>
+        <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget tristique elit. Etiam euismod dictum lectus, ut efficitur diam tristique facilisis. Cras sem tortor, dignissim at massa ut,fermentum molestie ligula. Mauris purus nisi, lacinia ac sem id, pretium sagittis mi. Nunc ultricies odio id ipsum bibendum, non posuere nisl consequat. Aliquam non pellentesque velit.     Quisque sit amet pretium odio. In convallis quis lectus non laoreet. Integer non erat quis eros elementum ultricies quis in tellus.
+        </p></div>
+
+        <div id="news"><h2>News</h2></div>
+        <div id="contact"><h2>Contact</h2></div>
+      </div> 
+
+      <p class="footer">The small print</p>
     </body>
 </html>
