@@ -4,6 +4,9 @@
         <meta charset="utf-8">
         <title>flexorderdir</title>
         <style>
+          body{
+            margin: 0;
+          }
           .head{
             display: flex;
             
@@ -17,26 +20,28 @@
             font-style: italic;
           }
           .article{
+            flex: 5;
             flex: 60%;
+            text-align: center;
             background-color: cyan;
           }
           #news{
+            flex: 1;
             order: -1;
+            flex: 20%;
+            background-color: pink;
           }
-          #news,#contact{
+          #contact{
+            flex: 1;
             flex: 20%;
             background-color: pink;
           }
           .footer{
             font-size: 6px;
-            margin-top: 0;
+            margin-top: 0px;
             background-color: purple;
-            padding: 2em;
+            padding: 2.5em;
             text-align: right;
-          }
-          div{
-            flex: 1 1 auto;
-            text-align: center;
           }
         </style>
     </head>
