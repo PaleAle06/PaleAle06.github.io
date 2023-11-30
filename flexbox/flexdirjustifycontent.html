@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>flexdirjustifycontent</title>
+        <style>
+          .wrapper{
+            flex-wrap: wrap;
+            display: flex;
+          }
+          .menu{
+            flex: 9;
+            background-color: brown;
+          }
+          ul{
+            list-style-type: none;
+            
+          }
+          li{
+            float: left;
+            margin: 1em;
+          }
+          #small{
+            flex: 1;
+            background-color: lime;
+            padding: 25px;
+          }
+          #big{
+            background-color: orange;
+            flex-basis: 100%;
+            background-size: cover;
+          }
+        </style>
+    </head>
+    <body class="wrapper">
+      <div class="menu">
+        <ul>
+          <li>MENU</li>
+          <li>NEWS</li>
+          <li>ABOUT</li>
+          <li>CONTACT</li>
+        </ul>
+      </div>
+      <div id="small">logo</div>
+      <div id="big">croisant</div>
+    </body>
+</html>
