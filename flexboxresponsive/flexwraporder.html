@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+        <title>flexwraporder</title>
+        <style>
+          @media screen and (min-width: 0px) and (max-width: 560px) {
+            .main{
+              order: 1;
+              flex: 1 100%;
+            }
+            .aside-1{
+              order: 2;
+              flex: 1 100%;
+            }
+            .aside-2{
+              order: 3;
+              flex: 1 100%;
+            }
+          }
+          @media screen and (min-width: 560px) and (max-width: 800px) {
+            .main{
+              order: 1;
+              flex: 1 100%;
+            }
+            .aside{
+              order: 2;
+              flex: 1 50%;
+            }
+          }
+          @media screen and (min-width: 800px) {
+            .main{
+              flex: 3;
+              order: 2;
+            }
+            .aside{
+              flex: 1;
+            }
+            .aside-1{
+              order: 1;
+            }
+            .aside-2{
+              order: 3;
+            }
+          }
+            .wrapper{
+              text-align: center;
+              display: flex;
+              flex-wrap: wrap;
+            }
+            .header{
+              padding-top: 1em;
+              height: 2em;
+              flex-basis: 100%;
+              order: 0;
+              background-color: tomato;
+            }
+            .main{
+              background-color: cyan;
+            }
+            .aside{
+              padding-top: 1em;
+              padding-bottom: 1em;
+            }
+            .aside-1{
+              background-color: yellow;
+            }
+            .aside-2{
+              background-color: pink;
+            }
+            .footer{
+              padding-top: 1em;
+              height: 2em;
+              order: 4;
+              background-color: lightgreen;
+              flex-basis: 100%;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="header">Header</div>
+            <div class="main">
+                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>  
+            </div> 
+            <div class="footer">Footer</div>
+            <div class="aside aside-1">Aside 1</div>
+            <div class="aside aside-2">Aside 2</div>
+        </div> 
+    </body>
+</html>
