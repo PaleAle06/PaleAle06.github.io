@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>cardsresponsive</title>
+        <style>
+            .wrapper{
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            @media screen and (max-width: 450px){
+                .wrapper{
+                    flex-direction: column-reverse;
+                }
+            }
+
+            @media screen and (min-width:450px) and (max-width: 900px){
+                .wrapper{
+                    flex-direction: row;
+                }
+                
+                .first{
+                    flex: 1;
+                }
+                .second{
+                    flex: 1;
+                }
+                .third{
+                    flex-basis: 100%;
+                }
+            }
+
+            @media screen and (min-width: 900px){
+                .wrapper{
+                    flex-direction: row;
+                }
+
+                .first{
+                    order: 1;
+                }
+                .second{
+                    order: 2;
+                }
+                .third{
+                    order: 0;
+                }
+            }
+
+            .first{
+                flex: 1;
+                box-shadow: 3px 3px red;
+            }
+            .second{
+                flex: 1;
+                box-shadow: 3px 3px red;
+            }
+            .third{
+                flex: 1;
+                box-shadow: 3px 3px red;
+            }
+        </style>
+    </head>
+    <body style="background-color: lightgreen;">
+        <div class="wrapper">
+            <img class="first" src="foto1s.png">
+            <img class="second" src="foto2s.png">
+            <img class="third" src="foto3s.png">
+        </div>
+    </body>
+</html>

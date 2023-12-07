@@ -4,24 +4,60 @@
         <meta charset="utf-8">
         <title>formresponsive</title>
         <style>
-          .wrapper{
-            background-color: lightgreen;
-          }
+
           .form-row{
-            
+            margin-top: 10px;
+            display: flex;
+            justify-content: flex-end;
           }
-          #name{
-            
+          
+          label{
+            flex: 1;
           }
-          #cityborn{
-            
+          
+          input{
+            flex: 5;
           }
-          #email{
-            
+          
+          @media screen and (max-width: 400px) {
+            .form-row input {
+              flex: 1;
+            } 
           }
+          
+          @media screen and (min-width: 400px) and (max-width: 700px) {
+            .form-row input {
+              flex: 2;
+            } 
+          }
+          
+          @media screen and (min-width: 700px) and (max-width: 950px) {
+            .form-row input {
+              flex: 3;
+            }
+          }
+            
+          @media screen and (min-width: 950px) and (max-width: 1200px) {
+            .form-row input {
+              flex: 4;
+            }
+          }
+          
+          ul{
+            list-style-type: none;
+          }
+          
+          button{
+            background-color: lightblue;
+            border: 2px solid red;
+            border-radius: 8px;
+            padding: 5px;
+            color: white;
+          }
+          
         </style>
     </head>
-    <body>
+    <body style="background-color: lightgreen;">
         <form>
             <ul class="wrapper">
                 <li class="form-row">
