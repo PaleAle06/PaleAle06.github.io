@@ -79,6 +79,48 @@
                 .aside{
                     padding-left: 15px;
                 }
+
+                .footer{
+                    color: white;
+                    background-color: saddlebrown;
+                }
+
+                ul{
+                    flex-basis: 100%;
+                    padding-top: 15px;
+                    padding-bottom: 15px;
+                }
+
+                li{
+                    margin-left: 5px;
+                    margin-right: 5px;
+                    margin-top: 15px;
+                    margin-bottom: 15px;
+                    padding-top: 12px;
+                    padding-bottom: 12px;
+                }
+
+            }
+
+            @media screen and (min-width: 600px) {
+                .meny{
+                    order: 0;
+                    flex: 1;
+                }
+
+                .all{
+                    flex-direction: column;
+                }
+
+                .nav{
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                }
+
+                ul{
+                    flex: 4;
+                    float: left;
+                }
             }
 
         </style>
