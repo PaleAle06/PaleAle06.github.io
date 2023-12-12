@@ -13,20 +13,48 @@
 
             }
 
+            .main{
+                background-color: antiquewhite;
+                border: 5px solid beige;
+                border-radius: 20px;
+            }
+
+            .aside{
+                border-top-right-radius: 20px;
+                background-color: beige;
+                color: black;
+            }
+
+            .footer{
+                background-color: brown;
+            }
+            
             h1{
-                border-top: 3px solid brown;
-                border-left: 5px solid brown;
+                margin-left: 15px;
+                border-top: 2px solid brown;
+                border-left: 3px solid brown;
             }
 
             ul{
+                
                 list-style-type: none;
                 background-image: url(croissants.jpg);
                 background-size: cover;
             }
 
+            li{
+                color: whitesmoke;
+                text-align: center;
+                border: 2px solid whitesmoke;
+            }
+
             @media screen and (max-width: 600px) {
                 .all{
                     flex-direction: column;
+                }
+
+                .meny{
+                    flex-basis: 100%;
                 }
             }
 
