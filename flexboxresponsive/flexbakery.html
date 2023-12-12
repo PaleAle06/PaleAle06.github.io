@@ -43,7 +43,9 @@
             }
 
             ul{
-                
+                padding-top: 15px;
+                padding-bottom: 15px;
+                margin: 0;
                 list-style-type: none;
                 background-image: url(croissants.jpg);
             }
@@ -54,13 +56,17 @@
                 padding-bottom: 12px;
                 color: whitesmoke;
                 text-align: center;
-                border: 2px solid whitesmoke;
+                border: 4px solid whitesmoke;
                 border-radius: 5px;
             }
 
             @media screen and (max-width: 600px) {
                 .all{
                     flex-direction: column;
+                }
+
+                .nav{
+                    flex-direction: row;
                 }
 
                 .meny{
