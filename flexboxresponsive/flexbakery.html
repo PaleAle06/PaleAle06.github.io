@@ -62,13 +62,13 @@
             li{
                 margin-left: 5px;
                 margin-right: 5px;
-                margin-top: 15px;
-                margin-bottom: 15px;
+                margin-top: 20px;
+                margin-bottom: 20px;
                 padding-top: 12px;
                 padding-bottom: 12px;
                 color: whitesmoke;
                 text-align: center;
-                border: 2px solid whitesmoke;
+                border: 1px solid whitesmoke;
                 border-radius: 8px;
             }
 
@@ -89,17 +89,26 @@
                 .nav{
                     display: flex;
                     flex-direction: row;
-                    flex-wrap: wrap;
+                    flex-wrap: nowrap;
                 }
 
                 ul{
                     order: 1;
-                    flex: 4;
+                    flex: 5;
                     display: flex;
                 }
                 li{
                     align-items: center;
                     flex: 1;
+                }
+
+                .aside{
+                    display: flex;
+                    flex-direction: row;
+                }
+
+                .asideItem{
+                    margin-left: 75px;
                 }
             }
 
