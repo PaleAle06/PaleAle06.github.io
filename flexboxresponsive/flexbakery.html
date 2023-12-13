@@ -10,10 +10,13 @@
             }
 
             .all{
+                flex-direction: column;
                 display: flex;
             }
 
             .nav{
+                flex-direction: row;
+                flex-wrap: wrap;
                 display: flex;
                 text-transform: uppercase;
             }
@@ -29,6 +32,7 @@
                 border-top-right-radius: 25px;
                 background-color: lightgray;
                 color: black;
+                padding-left: 15px;
             }
 
             .footer{
@@ -50,6 +54,8 @@
                 margin: 0;
                 list-style-type: none;
                 background: no-repeat url(croissants.jpg);
+                padding-top: 15px;
+                padding-bottom: 15px;
             }
 
             li{
@@ -65,43 +71,8 @@
                 border-radius: 8px;
             }
 
-            @media screen and (max-width: 600px) {
-                .all{
-                    flex-direction: column;
-                }
-
-                .nav{
-                    flex-direction: row;
-                    flex-wrap: wrap;
-                }
-
-                .meny{
-                    flex-basis: 100%;
-                }
-                .aside{
-                    padding-left: 15px;
-                }
-
-                .footer{
-                    color: white;
-                    background-color: saddlebrown;
-                }
-
-                ul{
-                    flex-basis: 100%;
-                    padding-top: 15px;
-                    padding-bottom: 15px;
-                }
-
-                li{
-                    margin-left: 5px;
-                    margin-right: 5px;
-                    margin-top: 15px;
-                    margin-bottom: 15px;
-                    padding-top: 12px;
-                    padding-bottom: 12px;
-                }
-
+            .meny{
+                flex-basis: 100%;
             }
 
             @media screen and (min-width: 600px) {
