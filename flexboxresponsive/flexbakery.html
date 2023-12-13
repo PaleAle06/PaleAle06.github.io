@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <title>flexbakery</title>
         <style>
+            
             body{
                 color: brown;
             }
@@ -13,6 +14,7 @@
             }
 
             .nav{
+                display: flex;
                 text-transform: uppercase;
             }
 
@@ -74,7 +76,7 @@
                 }
 
                 .meny{
-                    width: 100%;
+                    flex-basis: 100%;
                 }
                 .aside{
                     padding-left: 15px;
@@ -113,13 +115,19 @@
                 }
 
                 .nav{
+                    display: flex;
                     flex-direction: row;
                     flex-wrap: wrap;
                 }
 
                 ul{
+                    order: 1;
                     flex: 4;
-                    float: left;
+                    display: flex;
+                }
+                li{
+                    align-items: center;
+                    flex: 1;
                 }
             }
 
