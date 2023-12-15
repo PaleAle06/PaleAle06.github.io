@@ -6,7 +6,7 @@
     </head>
     <body onload="inmatningFakultet()">
 
-        <h1 id="res" style="text-align: center; background-color: #A3B52D;"></h1>
+        <h1 id="res"></h1>
 
         <script>
             function factorial(x) {
@@ -20,7 +20,7 @@
             try {
                 var n = Number(prompt("Please enter a positive integer", ""));
                 var f = factorial(n);
-                document.getElementById("num").innerHTML = n + "! = " + f;
+                document.getElementById("res").innerHTML = n + "! = " + f;
             }
             catch (ex) {alert(ex);}
             }
