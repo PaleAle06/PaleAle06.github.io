@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>exprov</title>
+
+        <style>
+            #container {
+                display: flex;
+                flex-wrap: wrap;
+                background-color: blue;
+            }
+
+            #menu {
+                flex-basis: 100%;
+                display: flex;
+            }
+            #menu > li {
+                flex: 1;
+                background-color: lightgray;
+                box-shadow: 5px 5px lightgreen;
+            }
+
+            #more {
+                flex-basis: 100%;
+                display: flex;
+                box-shadow: 5px 5px lightgreen;
+            }
+            #pic {
+                flex: 1;
+            }
+            #text {
+                flex: 1;
+                background-color: lightgray;
+            }
+            #text > button {
+                color: white;
+                background-color: black;
+                border-radius: 15px;
+            }
+
+            #stats {
+                flex-basis: 100%;
+                display: flex;
+            }
+            #stats > li {
+                flex: 1;
+                background-color: lightgray;
+                box-shadow: 5px 5px red;
+            }
+            form > button {
+                text-align: center;
+            }
+
+            #check {
+                justify-content: center;
+            }
+
+            #gender {
+                background-color: lightgray;
+            }
+
+            #skill {
+                background-color: lightgray;
+            }
+        </style>
+    </head>
+    <body id="container">
+        <ul id="menu">
+            <li>home</li>
+            <li>about</li>
+            <li>services</li>
+            <li>contact</li>
+        </ul>
+        <div id="more">
+            <div id="pic" style="background-image: url(pic1.png);"></div>
+            <div id="text">
+                <h1>Your Business On The Web</h1><br>
+                Lorem ipsum dolor sit amet<br>
+
+            </div>
+        </div>
+        <ul id="stats">
+            <li>Analytics</li>
+            <li>Marketing</li>
+            <li>Development</li>
+            <li>Support</li>
+        </ul>
+        <div id="check">
+            <div id="gender">
+                <div>
+                    <form>
+                        <fieldset>
+                            <legend>Gender*</legend>
+                            <label for="Gender" style="margin-right: 10px;">Male</label><input type="radio" name="Gender">
+                            <label for="Gender">Female</label><input type="radio" name="Gender">
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+            <div id="skill">
+                <div>
+                    <form>
+                        <fieldset>
+                            <legend>Programming Skill</legend>
+                            <label for="Skill">Java</label><input type="checkbox" name="Skill">
+                            <label for="Skill">C++</label><input type="checkbox" name="Skill">
+                            <label for="Skill">C#</label><input type="checkbox" name="Skill">
+                        </fieldset>
+                        <button>Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
