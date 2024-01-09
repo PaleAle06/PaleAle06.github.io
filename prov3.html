@@ -8,9 +8,9 @@
 
         <script>
             function border() {
-                document.getElementById("title").style.background = "yellow";
-                document.getElementById("lorem").style.background = "cyan";
-                document.getElementById("read").style.background = "blue";
+                document.getElementById("title").style.background = "lightgreen";
+                document.getElementById("lorem").style.background = "lightblue";
+                document.getElementById("read").value = "Read Enough";
             }
         </script>
 
@@ -39,7 +39,7 @@
                 padding: 12px 0;
                 text-transform: uppercase;
                 background-color: lightgray;
-                box-shadow: 5px 5px mediumvioletred;
+                box-shadow: 3px 5px #d33372;
             }
             #home {
                 flex: 1;
@@ -57,7 +57,7 @@
                 margin: 0 10px;
                 flex-basis: 100%;
                 display: flex;
-                box-shadow: 5px 5px darkblue;
+                box-shadow: 3px 5px #0733bf;
             }
             #pic {
                 padding: 35px 0;
@@ -80,7 +80,7 @@
             #lorem {
               display: inline;
             }
-            #subtext > button {
+            #read {
                 padding: 5px;
                 margin: 10px 0;
                 font-size: 1.2em;
@@ -98,9 +98,8 @@
                 flex: 1;
                 text-align: center;
                 margin: 0 10px;
-                
                 background-color: lightgray;
-                box-shadow: 5px 5px darkred;
+                box-shadow: 3px 5px #d3331f;
             }
             i {
                 font-size: 2em;
@@ -128,14 +127,17 @@
                 padding: 30px 0;
                 margin: 0 10px;
                 background-color: lightgray;
+                box-shadow: 3px 5px #078630;
             }
 
             #skill {
                 padding: 30px 0;
                 margin: 0 10px;
                 background-color: lightgray;
+                box-shadow: 3px 5px #078630;
             }
-            #but {
+            #button {
+                margin-top: 15px;
                 text-align: center;
             }
         
@@ -256,20 +258,26 @@
                 <div id="subtext"><br>
                     <h1 id="title">Your Business On The Web</h1><br><br>
                     <p id="lorem">Lorem ipsum dolor sit amet</p><br><br>
-                    <button id="read">Read More</button>
+                    <input type="button" value="Read More" id="read">
                 </div>
             </div>
         </div>
         <ul id="stats">
-            <li><i class="fa-solid fa-chart-pie"></i><br><h3>Analytics</h3><br>Lorem ipsum dolor sit amet</li>
-            <li><i class="fa-solid fa-rectangle-ad"></i><br><h3>Marketing</h3><br>Lorem ipsum dolor sit amet</li>
-            <li><i class="fa-solid fa-window-maximize"></i><br><h3>Development</h3><br>Lorem ipsum dolor sit amet</li>
-            <li><i class="fa-solid fa-phone"></i><br><h3>Support</h3><br>Lorem ipsum dolor sit amet</li>
+            <li><i class="fa-solid fa-chart-pie fa-rotate-90" style="color: yellow;"></i><br><h3>Analytics</h3><br>Lorem ipsum dolor sit amet</li>
+            <li><i class="fa-solid fa-rectangle-ad fa-rotate-270" style="color: red;"></i><br><h3>Marketing</h3><br>Lorem ipsum dolor sit amet</li>
+            <li><i class="fa-regular fa-window-maximize" style="color: blue;"></i><br><h3>Development</h3><br>Lorem ipsum dolor sit amet</li>
+            <li><i class="fa-solid fa-phone fa-rotate-270" style="color: lime;"></i><br><h3>Support</h3><br>Lorem ipsum dolor sit amet</li>
         </ul>
         <div id="check">
             <div id="gender">
                 <div id="genderbx">
                     <form>
+                         <fieldset>
+                            <legend>Your name</legend>
+                            <label for="Name">First Name:*</label> <input type="text" class="name" size="15" style="margin-left:33px; background-color: yellow;">
+                            <br>
+                            <label for="LastName">Last Name:*</label> <input type="text" class="name" size="15" style="margin-left:36px; background-color: yellow;">
+                        </fieldset>
                         <fieldset>
                             <legend>Nationality*</legend>
                             <label for="nationality">Choose a nationality:</label>
@@ -280,12 +288,6 @@
                                 <option value="">USA</option>
                             </select>
                         </fieldset>
-                        <fieldset>
-                            <legend>Your name</legend>
-                            <label for="Name">First Name:*</label> <input type="text" class="name" size="15" style="margin-left:43px;">
-                            <br>
-                            <label for="LastName">Last Name:*</label> <input type="text" class="name" size="15" style="margin-left:46px;">
-                        </fieldset>
                     </form>
                 </div>
             </div><br>
@@ -293,10 +295,10 @@
                 <div id="skillbx">
                     <form>
                         <fieldset>
-                            <legend>Programming<br>Skill</legend>
-                            <label for="Skill">Electrician</label><input type="checkbox" name="Skill"><br>
-                            <label for="Skill">Baker</label><input type="checkbox" name="Skill"><br>
-                            <label for="Skill">Carpenter</label><input type="checkbox" name="Skill">
+                            <legend>Skill</legend>
+                            <label for="Skill" style="margin-right: 4px;">Electrician</label><input type="checkbox" name="Skill"><br>
+                            <label for="Skill" style="margin-right: 35px;">Baker</label><input type="checkbox" name="Skill"><br>
+                            <label for="Skill" style="margin-right: 10px;">Carpenter</label><input type="checkbox" name="Skill">
                         </fieldset>
                         <div id="button"><button>Send</button></div>
                     </form>
