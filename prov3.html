@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Your Business</title>
+        <link rel="icon" type="image/x-icon" href="UKFlagIcon.png">
+        <script src="https://kit.fontawesome.com/b96584f96b.js" crossorigin="anonymous"></script>
+
+        <script>
+            function border() {
+                document.getElementById("title").style.background = "yellow";
+                document.getElementById("lorem").style.background = "cyan";
+                document.getElementById("read").style.background = "blue";
+            }
+        </script>
+
+        <style>
+
+            #container {
+                display: flex;
+                flex-wrap: wrap;
+                background-color: lightgreen;
+                justify-content: center;
+            }
+
+            ul {
+                list-style-type: none;
+            }
+
+            .menu {
+                padding: 12px 0;
+                flex-basis: 100%;
+                display: flex;
+            }
+            .menu > li {
+                flex: 2;
+                text-align: center;
+                margin: 0 10px;
+                padding: 12px 0;
+                text-transform: uppercase;
+                background-color: lightgray;
+                box-shadow: 5px 5px mediumvioletred;
+            }
+            #home {
+                flex: 1;
+            }
+            #news {
+                flex: 1;
+            }
+            #blank {
+                box-shadow: transparent;
+                background-color: transparent;
+                opacity: 0;
+            }
+
+            #more {
+                margin: 0 10px;
+                flex-basis: 100%;
+                display: flex;
+                box-shadow: 5px 5px darkblue;
+            }
+            #pic {
+                padding: 35px 0;
+                flex: 1;
+                background-size: cover;
+            }
+            #text {
+                padding-bottom: 70px;
+                flex: 2;
+                background-color: lightgray;
+            }
+            #subtext {
+                padding-left: 100px;
+                margin-top: 0px;
+            }
+            #subtext > h1 {
+                margin: 95px 0;
+                display: inline;
+            }
+            #lorem {
+              display: inline;
+            }
+            #subtext > button {
+                padding: 5px;
+                margin: 10px 0;
+                font-size: 1.2em;
+                color: white;
+                background-color: black;
+                border-radius: 20px;
+            }
+
+            #stats {
+                padding: 12px 0;
+                flex-basis: 100%;
+                display: flex;
+            }
+            #stats > li {
+                flex: 1;
+                text-align: center;
+                margin: 0 10px;
+                
+                background-color: lightgray;
+                box-shadow: 5px 5px darkred;
+            }
+            i {
+                font-size: 2em;
+            }
+            form > button {
+                text-align: center;
+            }
+
+            #check {
+                display: flex;
+                justify-content: center;
+            }
+            fieldset {
+                margin: 0 10px;
+            }
+            label {
+                display: inline-block;
+                margin-bottom: 15px;
+            }
+            legend {
+                background-color: lightgreen;
+            }
+
+            #gender {
+                padding: 30px 0;
+                margin: 0 10px;
+                background-color: lightgray;
+            }
+
+            #skill {
+                padding: 30px 0;
+                margin: 0 10px;
+                background-color: lightgray;
+            }
+            #but {
+                text-align: center;
+            }
+        
+            @media screen and (max-width: 700px) {
+                .menu {
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                }
+                .menu > li {
+                    flex-basis: 50%;
+                    margin: 3px 10px;
+                }
+                #home {
+                    flex-basis: 40%;
+                }
+                #news {
+                    flex-basis: 40%;
+                }
+                
+                ul {
+                    margin-top: 0;
+                }
+                #blank {
+                    display: none;
+                }
+
+                #text {
+                    padding-bottom: 55px;
+                    order: 0;
+                    flex: 5;
+                }
+                #pic {
+                    padding: 25px;
+                    order: 1;
+                    flex: 6;
+                }
+                #subtext {
+                    padding: 10px;
+                }
+                
+                #check {
+                    display: none;
+                }
+            }
+
+            @media screen and (max-width: 550px) {
+                .menu {
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                }
+                .menu > li {
+                    flex-basis: 60%;
+                    margin: 3px 10px;
+                    order: 0;
+                }
+                #home {
+                    flex-basis: 40%;
+                    order: 5;
+                }
+                #news {
+                    flex-basis: 40%;
+                    order: 5;
+                }
+                ul {
+                    margin-top: 0;
+                    margin-bottom: 0;
+                }
+                #blank {
+                    display: none;
+                }
+                #about {
+                    order: 0;
+                }
+                #serv {
+                    order: 1;
+                }
+                #cont {
+                    order: 2;
+                }
+                #home {
+                    order: 3;
+                }
+
+                #more {
+                    display: none;
+                }
+
+                #stats {
+                    margin-top: 0;
+                    display: flex;
+                    flex-wrap: wrap;
+                }
+                #stats > li {
+                    text-align: center;
+                    margin: 8px 8px;
+                    flex-basis: 60%;
+                }
+
+                #check {
+                    display: none;
+                }
+            }
+
+        </style>
+    </head>
+    <body id="container">
+        <ul class="menu">
+            <li id="home">home</li>
+            <li id="news">news</li>
+            <li id="blank"></li>
+            <li id="about">about</li>
+            <li id="serv">services</li>
+            <li id="cont">contact</li>
+        </ul>
+        <div id="more">
+            <div id="pic" style="background-image: url(pic1.png);" onclick="border()"></div>
+            <div id="text">
+                <div id="subtext"><br>
+                    <h1 id="title">Your Business On The Web</h1><br><br>
+                    <p id="lorem">Lorem ipsum dolor sit amet</p><br><br>
+                    <button id="read">Read More</button>
+                </div>
+            </div>
+        </div>
+        <ul id="stats">
+            <li><i class="fa-solid fa-chart-pie"></i><br><h3>Analytics</h3><br>Lorem ipsum dolor sit amet</li>
+            <li><i class="fa-solid fa-rectangle-ad"></i><br><h3>Marketing</h3><br>Lorem ipsum dolor sit amet</li>
+            <li><i class="fa-solid fa-window-maximize"></i><br><h3>Development</h3><br>Lorem ipsum dolor sit amet</li>
+            <li><i class="fa-solid fa-phone"></i><br><h3>Support</h3><br>Lorem ipsum dolor sit amet</li>
+        </ul>
+        <div id="check">
+            <div id="gender">
+                <div id="genderbx">
+                    <form>
+                        <fieldset>
+                            <legend>Nationality*</legend>
+                            <label for="nationality">Choose a nationality:</label>
+                            <select style="margin-left:1em;">
+                                <option value="">NED</option>
+                                <option value="">SWE</option>
+                                <option value="">GBR</option>
+                                <option value="">USA</option>
+                            </select>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Your name</legend>
+                            <label for="Name">First Name:*</label> <input type="text" class="name" size="15" style="margin-left:43px;">
+                            <br>
+                            <label for="LastName">Last Name:*</label> <input type="text" class="name" size="15" style="margin-left:46px;">
+                        </fieldset>
+                    </form>
+                </div>
+            </div><br>
+            <div id="skill">
+                <div id="skillbx">
+                    <form>
+                        <fieldset>
+                            <legend>Programming<br>Skill</legend>
+                            <label for="Skill">Electrician</label><input type="checkbox" name="Skill"><br>
+                            <label for="Skill">Baker</label><input type="checkbox" name="Skill"><br>
+                            <label for="Skill">Carpenter</label><input type="checkbox" name="Skill">
+                        </fieldset>
+                        <div id="button"><button>Send</button></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
