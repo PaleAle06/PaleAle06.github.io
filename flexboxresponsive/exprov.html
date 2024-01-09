@@ -4,7 +4,16 @@
         <meta charset="utf-8">
         <title>Your Business</title>
         <link rel="icon" type="image/x-icon" href="UKFlagIcon.png">
-        <script src="https://kit.fontawesome.com/b96584f96b.js" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/b96584f96b.js" crossorigin="anonymous">
+
+            function border() {
+                document.getElementById("home").style.border = "5px 5px solid yellow";
+
+                document.getElementById("about").style.border = "5px 5px solid cyan";
+                document.getElementById("serv").style.border = "5px 5px solid cyan";
+                document.getElementById("cont").style.border = "5px 5px solid cyan";
+            }
+        </script>
 
         <style>
 
@@ -214,7 +223,7 @@
             <li id="cont">contact</li>
         </ul>
         <div id="more">
-            <div id="pic" style="background-image: url(pic1.png);"></div>
+            <div id="pic" style="background-image: url(pic1.png);" onclick="border"></div>
             <div id="text">
                 <div id="subtext">
                     <h1>Your Business On The Web</h1>
